@@ -5,11 +5,21 @@ ccex.options({
     'verbose' : false,
     'cleartext' : true
 });
-if (!process.argv[2])
+var args = process.argv.slice(2);
+var run = true;
+if (args.length < 2){
+    console.log("nodejs profit.js <CoinTicker> <NumberOfTrades>");
+    run = false;
+}
+if ( Number(args[1]) == "NaN"){
     console.log("Please enter a number of trades to calculate profit for");
-else {
-    var trades=process.argv[2];
-    ccex.custom({ a:'mytrades', marketid:'CRW-BTC', limit: trades}, function( data ) {
+    run = false;
+}
+var coin = args[0];
+var trades = Number(args[1]);
+
+if (run == True) {
+    ccex.custom({ a:'mytrades', marketid:coin+'-BTC', limit: trades}, function( data ) {
         //console.log(JSON.parse(data).return);
         var selltrades=0;
         var sell=0;
