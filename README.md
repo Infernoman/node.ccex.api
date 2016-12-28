@@ -8,4 +8,4 @@ npm install
 
 change APIKEY and APISECRET in profit.js to your accounts api key/secret
 
-nodejs profit.js <CoinTicker> <NumberOfTrades>
+nodejs profit.js [CoinTicker] [NumberOfTrades]
