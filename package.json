@@ -1,0 +1,36 @@
+{
+  "name": "node.ccex.api",
+  "version": "0.0.1",
+  "description": "Node C-cex API - asynchronous node.js library for the C-cex API https://ccex.com/",
+  "keywords": [
+    "btc",
+    "crw",
+    "bitcoin",
+    "altcoin",
+    "ccex"
+  ],
+  "author": "Alastair Clark ( https://github.com/Infernoman )",
+  "contributors": [{"Adrian Soluch ( https://github.com/n0mad01 )"}],
+  "license": "MIT",
+  "dependencies": {
+    "request": ">= 2.35.0",
+    "JSONStream": ">= 0.8.4",
+    "event-stream": ">= 3.1.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Infernoman/node.ccex.api"
+  },
+  "main": "node.ccex.api.js",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "bugs": {
+    "url": "https://github.com/Infernoman/node.ccex.api/issues",
+    "email": ""
+  },
+  "homepage": "https://github.com/Infernoman/node.ccex.api",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
