@@ -7,8 +7,6 @@ ccex.options({
 });
 var args = process.argv.slice(2);
 var run = true;
-if (ccex.options.apikey == "APIKEY" || ccex.options.apisecret == "APISECRET")
-    console.log("Please change lines 3 and 4 of profit.js to the API-Key and API-Secret. If you don't already have one you can get one at https://c-cex.com/?id=profile in the API SETTINGS Tab");
 if (args.length < 2){
     console.log("nodejs profit.js <CoinTicker> <NumberOfTrades>");
     run = false;
