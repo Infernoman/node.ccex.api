@@ -10,7 +10,7 @@
     "ccex"
   ],
   "author": "Alastair Clark ( https://github.com/Infernoman )",
-  "contributors": [{"Adrian Soluch ( https://github.com/n0mad01 )"}],
+  "contributors": ["Adrian Soluch ( https://github.com/n0mad01 )"],
   "license": "MIT",
   "dependencies": {
     "request": ">= 2.35.0",
