@@ -18,7 +18,7 @@ if ( Number(args[1]) == "NaN"){
 var coin = args[0];
 var trades = Number(args[1]);
 
-if (run == True) {
+if (run == true) {
     ccex.custom({ a:'mytrades', marketid:coin+'-BTC', limit: trades}, function( data ) {
         //console.log(JSON.parse(data).return);
         var selltrades=0;
